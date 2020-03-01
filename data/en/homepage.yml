@@ -1,12 +1,12 @@
 ########################## hero area ##########################
 hero:
-  title : "I'm Somrat Sorkar"
+  title : "FinTechAssociation"
 
   # animated text loop
   occupations:
-    - "Web Developer"
-    - "Graphic Designer"
-    - "Database Manager"
+    - "Open mind"
+    - "Open source"
+    - "Decentralized"
 
   # slider background image loop
   slider_image:
@@ -17,7 +17,7 @@ hero:
   # button
   button:
     enable : true
-    label : "HIRE ME"
+    label : "EXPLORE US"
     link : "#contact"
 
 
