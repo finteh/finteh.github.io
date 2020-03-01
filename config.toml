@@ -129,10 +129,10 @@ copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netli
 
 
 ################################### French language #####################################
-[Languages.fr]
-languageName = "Fr"
-languageCode = "fr-fr"
-contentDir = "content/french"
+[Languages.ru]
+languageName = "Ru"
+languageCode = "ru-ru"
+contentDir = "content/russian"
 weight = 2
 home = "Accueil"
 # copyright
