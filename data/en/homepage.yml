@@ -7,6 +7,12 @@ hero:
     - "Open mind"
     - "Open source"
     - "Decentralized"
+    - "Human WEB3"
+    - "Cooperation"
+    - "Author of code"
+    - "Perfect code"
+
+
 
   # slider background image loop
   slider_image:
@@ -18,7 +24,7 @@ hero:
   button:
     enable : true
     label : "EXPLORE US"
-    link : "#contact"
+    link : "#about"
 
 
 ####################### Full screen navigation #####################
