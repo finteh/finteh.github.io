@@ -119,10 +119,10 @@ contentDir = "content/english"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
+copyright = "Theme was kindly provided by [somrat](https://somrat.netlify.com)"
 
 
-################################### French language #####################################
+################################### Russian language #####################################
 [Languages.ru]
 languageName = "Ru"
 languageCode = "ru-ru"
@@ -130,4 +130,4 @@ contentDir = "content/russian"
 weight = 2
 home = "Accueil"
 # copyright
-copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
+copyright = "Тема любезно предоставлена автором [somrat](https://somrat.netlify.com)"
