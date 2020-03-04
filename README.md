@@ -1,17 +1,40 @@
-# finteh.github.io
-## The Ubuntu manual of launch local finteh site for WYSIWYG
-git clone git@github.com:finteh/finteh.github.io.git (or git clone https://github.com/finteh/finteh.github.io.git)
+## Installation and launch
+1. [Install Hugo](https://gohugo.io/getting-started/installing/).
 
-git checkout origin/source
+   If you're on Debian or Ubuntu the recommended option is installing snap package:
 
-git clone --recurse-submodules
+   ```bash
+   snap install hugo
+   ```
 
-cd finteh.github.io
+   If you don't have snap pre-installed, install it:
 
-sudo snap install hugo
+   ```bash
+   sudo apt update
+   sudo apt install snapd
+   ```
 
-hugo server (or /snap/bin/hugo server)
+2. Clone the repository:
 
-open local version of site http://localhost:1313/
+   ```bash
+   git clone --recurse-submodules git@github.com:finteh/finteh.github.io.git
+   ```
 
-change information in folders: data and images
+   If you don't have SSH keys associated with your GitHub account then clone via HTTPS:
+
+   ```bash
+   git clone --recurse-submodules https://github.com/finteh/finteh.github.io.git
+   ```
+
+3. Launch webserver:
+
+   ```bash
+   cd finteh.github.io
+   hugo server
+   ```
+
+4. Open site in your browser (default address is http://localhost:1313/).
+
+
+## Contributing
+You can change data used to build site in configuration files in the ```data/``` folder and static content in the ```static/``` folder. Refer to [Hugo documentation](https://gohugo.io/getting-started/directory-structure/) for more information.
