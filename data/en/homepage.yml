@@ -11,6 +11,7 @@ hero:
     - "Cooperation"
     - "Author of code"
     - "Perfect code"
+    - "Transparent "
 
 
 
@@ -31,8 +32,8 @@ hero:
 fullscreen_nav:
   enable : true
   bg_image : "images/backgrounds/full-nav-bg.jpg"
-  first_name : "MacGyver"
-  last_name : "SOMRAT"
+  first_name : "FINTEH"
+  last_name : "FinTechAssociation"
   
 
 ########################### About ##################################
@@ -96,7 +97,7 @@ skill:
 ################################### Service ##############################3
 service:
   enable : true
-  title : "SERVICES"
+  title : "SERVICE"
   service_list:
     # service item loop
     - name : "Web Development"
@@ -127,10 +128,10 @@ service:
 call_to_action:
   enable : true
   bg_image : "images/backgrounds/need-service.jpg"
-  title : "NEED A SERVICE?"
+  title : "Want fintech?"
   button:
     enable : true
-    label : "SAY HELLO!"
+    label : "Ask the president a question"
     link : "#contact"
 
 
@@ -233,7 +234,7 @@ portfolio:
 ################################# Testimonial #########################33
 testimonial:
   enable : true
-  title : "TESTIMONIALS"
+  title : "TESTIMONIALZ"
   testimonial_slider:
     # slider item loop
     - name : "Micheal Clark"
@@ -262,27 +263,27 @@ funfacts:
   enable : true
   funfacts_list:
     # funfacts item loop
-    - name : "HANDS TO WORK"
+    - name : "FINCUBATOR PROJECTS"
       image : "images/icons/works.png"
-      count : "100"
+      count : "8"
       
     # funfacts item loop
-    - name : "HAPPY CLIENT"
+    - name : "HAPPY MEMBERS"
       image : "images/icons/happy.png"
-      count : "200"
+      count : "456"
       
     # funfacts item loop
-    - name : "FINISHED PROJECT"
+    - name : "LAUNCHED STARTUPS"
       image : "images/icons/project.png"
-      count : "250"
+      count : "2"
       
     # funfacts item loop
-    - name : "CUPS OF COFFEE"
+    - name : "CUPS OF TEA"
       image : "images/icons/coffee.png"
-      count : "150"
+      count : "975"
 
 
 ############################## contact ###########################
 contact:
   enable : true
-  title : "SAY HELLO!"
+  title : "Ask the president a question"
