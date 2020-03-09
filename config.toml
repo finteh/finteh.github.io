@@ -53,27 +53,27 @@ URL = "#home"
 weight = 1
 
 [[menu.main]]
-name = "About me"
+name = "About us"
 URL = "#about"
 weight = 2
 
 [[menu.main]]
-name = "Service"
+name = "Services"
 URL = "#service"
 weight = 3
 
 [[menu.main]]
-name = "Portfolio"
+name = "Portfolioz"
 URL = "#portfolio"
 weight = 4
 
 [[menu.main]]
-name = "Testimonial"
+name = "Testimonialle"
 URL = "#testimonial"
 weight = 5
 
 [[menu.main]]
-name = "Contact"
+name = "Contactiren"
 URL = "#contact"
 weight = 6
 
@@ -86,7 +86,7 @@ logo_dark = "images/logo-dark.png"
 description = "This is meta description"
 author = "somrat"
 # contact form action
-contact_form_action = "" # contact form works with https://formspree.io
+contact_form_action = "https://formspree.io/xpzrgzjb" # contact form works with https://formspree.io
 # Google Analitycs
 google_analitycs_id = "" # your id
 
@@ -108,7 +108,7 @@ link = "https://github.com/finteh"
 
 [[params.social]]
 icon = "fa-linkedin" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://www.linkedin.com/in/finteh/"
+link = "https://www.linkedin.com/company/finteh/"
 
 
 ################################### English language #####################################
