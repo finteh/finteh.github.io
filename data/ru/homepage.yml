@@ -4,11 +4,17 @@ hero:
 
   # animated text loop
   occupations:
+    - "Прогрессивные взгляды"
     - "Открытый код"
-    - "Открытое сознание"
     - "Свободные лицензии"
     - "Децентрализация"
-    - "человеческий WEB3"
+    - "Человеческий WEB3"
+    - "Устойчивые инновации"
+    - "Социальные инвестиции"
+    - "Кооперация"
+    - "Авторы кода"
+    - "Понятный код"
+    - "Прозрачные финансы"
 
   # slider background image loop
   slider_image:
@@ -19,7 +25,7 @@ hero:
   # button
   button:
     enable : true
-    label : "Изучи нас"
+    label : "Узнай больше"
     link : "#about"
 
 
@@ -27,20 +33,20 @@ hero:
 fullscreen_nav:
   enable : true
   bg_image : "images/backgrounds/full-nav-bg.jpg"
-  first_name : "MacGyver"
-  last_name : "SOMRAT"
+  first_name : "Финкубатор"
+  last_name : "команда"
   
 
 ########################### About ##################################
 about:
   enable : true
   image : "images/backgrounds/portrait.jpg"
-  title : "KNOW MORE <br> ABOUT ME"
-  content : "It's Somrat, Professional Web Developer. I love to write code, it's my passoin. I am here to help you, i am here to design your web page. i can help you to describe yourself in the best way.<br>No matter how difficult your web page is, i will find an easy way and complete your work anyway. Stay connect with me............😊"
+  title : "Узнай нашу цель"
+  content : "Наша организация создаёт общее пространство для каждого, кто создаёт финансовые технологии."
   # button
   button:
     enable : true
-    label : "DOWNLOAD MY CV"
+    label : "СКАЧАЙ НАШ УСТАВ"
     link : "#" # you can put your cv in static folder and give the path here.
 
 ###########################3 Experience ##############################

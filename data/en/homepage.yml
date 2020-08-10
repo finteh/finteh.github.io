@@ -6,14 +6,15 @@ hero:
   occupations:
     - "Open mind"
     - "Open source"
-    - "Decentralized"
+    - "License with freedom"
+    - "Decentralization"
     - "Human WEB3"
     - "Sustainable innovations"
     - "Impact investments"
     - "Cooperation"
     - "Author of code"
-    - "Perfect code"
-    - "Transparent "
+    - "Clear code"
+    - "Transparent finance"
 
 
 
@@ -47,8 +48,8 @@ about:
   # button
   button:
     enable : true
-    label : "DOWNLOAD OUR CHARTER"
-    link : "#" # you can put your cv in static folder and give the path here.
+    label : "DOWNLOAD OUR ARTICLES OF ASSOCIATION"
+    link : "articles_of_fintechassociation.pdf" # you can put your cv in static folder and give the path here.
 
 ###########################3 Experience ##############################
 experience:
