@@ -83,7 +83,7 @@ weight = 6
 logo_light = "images/logo.png"
 logo_dark = "images/logo-dark.png"
 # Meta data
-description = "This is meta description"
+description = "Non-government organization FinTech Association: socialize for financial development"
 author = "somrat"
 # contact form action
 contact_form_action = "https://formspree.io/xpzrgzjb" # contact form works with https://formspree.io
@@ -100,7 +100,7 @@ preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
 
 [[params.social]]
 icon = "fa-telegram" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://teleg.run/finteh"
+link = "https://t.me/finteh"
 
 [[params.social]]
 icon = "fa-github" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/

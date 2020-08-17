@@ -12,7 +12,7 @@ hero:
     - "Sustainable innovations"
     - "Impact investments"
     - "Cooperation"
-    - "Author of code"
+    - "Author's code"
     - "Clear code"
     - "Transparent finance"
 
@@ -44,7 +44,7 @@ about:
   enable : true
   image : "images/backgrounds/portrait.jpg"
   title : "KNOW OUR GOAL"
-  content : "Our organisation make common space for every who makes financial technology."
+  content : "Our organisation make common space for every who do financial technology."
   # button
   button:
     enable : true
