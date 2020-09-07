@@ -129,10 +129,10 @@ service:
 call_to_action:
   enable : true
   bg_image : "images/backgrounds/need-service.jpg"
-  title : "NEED A SERVICE?"
+  title : "Стань частью профессионального сообщества"
   button:
     enable : true
-    label : "SAY HELLO!"
+    label : "Да!"
     link : "#contact"
 
 
@@ -236,7 +236,7 @@ portfolio:
 testimonial:
   enable : true
   title : "TESTIMONIALS"
-  testimonial_slider:
+http://localhost:1313/ru/#contact   testimonial_slider:
     # slider item loop
     - name : "Micheal Clark"
       image : "images/clients/client1.jpg"
