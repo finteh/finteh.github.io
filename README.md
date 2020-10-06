@@ -47,6 +47,6 @@ You are now on the default ```source``` branch, which is a [Hugo](https://gohugo
 ## Contributing
 Work from the ```source``` branch, don't use the ```master``` branch for contributions, only for hosting.
 
-You can change data used to build site in configuration files in the [data/](data) folder and static content in the [static/](static) folder. You can also change theme in the [themes/somrat/](themes/somrat) folder, which is a [separate repository](https://github.com/fincubator/somrat).
+You can change data used to build site in configuration files in the [data/](data) folder and static content in the [static/](static) folder. You can also change theme in the [themes/somrat/](https://github.com/fincubator/somrat) folder, which is a separate repository.
 
 Refer to [Hugo documentation](https://gohugo.io/getting-started/directory-structure/) for more information.
