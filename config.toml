@@ -46,37 +46,67 @@ link = "plugins/owl-carousel/owl.carousel.min.js"
 
 ############################## navigation ###############################
 
-# main menu
-[[menu.main]]
+# English main menu
+[[Languages.en.menu.main]]
 name = "Home"
 URL = "#home"
 weight = 1
 
-[[menu.main]]
+[[Languages.en.menu.main]]
 name = "About us"
 URL = "#about"
 weight = 2
 
-[[menu.main]]
+[[Languages.en.menu.main]]
 name = "Services"
 URL = "#service"
 weight = 3
 
-[[menu.main]]
-name = "Portfolioz"
+[[Languages.en.menu.main]]
+name = "Portfolio"
 URL = "#portfolio"
 weight = 4
 
-[[menu.main]]
-name = "Testimonialle"
+[[Languages.en.menu.main]]
+name = "Testimonials"
 URL = "#testimonial"
 weight = 5
 
-[[menu.main]]
-name = "Contactiren"
+[[Languages.en.menu.main]]
+name = "Contact"
 URL = "#contact"
 weight = 6
 
+# Russian main menu
+[[Languages.ru.menu.main]]
+name = "Главная"
+URL = "#home"
+weight = 1
+
+[[Languages.ru.menu.main]]
+name = "О нас"
+URL = "#about"
+weight = 2
+
+[[Languages.ru.menu.main]]
+name = "Услуги"
+URL = "#service"
+weight = 3
+
+[[Languages.ru.menu.main]]
+name = "Портфолио"
+URL = "#portfolio"
+weight = 4
+
+[[Languages.ru.menu.main]]
+name = "Отзывы"
+URL = "#testimonial"
+weight = 5
+
+[[Languages.ru.menu.main]]
+name = "Контакты"
+URL = "#contact"
+weight = 6
 
 #################### default parameters ################################
 [params]
