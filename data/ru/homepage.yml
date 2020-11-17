@@ -47,7 +47,7 @@ about:
   button:
     enable : true
     label : "СКАЧАЙ НАШ УСТАВ"
-    link : "русский.pdf" # you can put your cv in static folder and give the path here.
+    link : "устав_ассоциации_финтех.pdf" # you can put your cv in static folder and give the path here.
 
 
 
