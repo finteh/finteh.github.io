@@ -57,20 +57,20 @@ name = "About us"
 URL = "#about"
 weight = 2
 
-[[Languages.en.menu.main]]
-name = "Services"
-URL = "#service"
-weight = 3
+#[[Languages.en.menu.main]]
+#name = "Services"
+#URL = "#service"
+#weight = 3
 
-[[Languages.en.menu.main]]
-name = "Portfolio"
-URL = "#portfolio"
-weight = 4
+#[[Languages.en.menu.main]]
+#name = "Portfolio"
+#URL = "#portfolio"
+#weight = 4
 
-[[Languages.en.menu.main]]
-name = "Testimonials"
-URL = "#testimonial"
-weight = 5
+#[[Languages.en.menu.main]]
+#name = "Testimonials"
+#URL = "#testimonial"
+#weight = 5
 
 [[Languages.en.menu.main]]
 name = "Contact"
@@ -88,20 +88,20 @@ name = "О нас"
 URL = "#about"
 weight = 2
 
-[[Languages.ru.menu.main]]
-name = "Услуги"
-URL = "#service"
-weight = 3
+#[[Languages.ru.menu.main]]
+#name = "Услуги"
+#URL = "#service"
+#weight = 3
 
-[[Languages.ru.menu.main]]
-name = "Портфолио"
-URL = "#portfolio"
-weight = 4
+#[[Languages.ru.menu.main]]
+#name = "Портфолио"
+#URL = "#portfolio"
+#weight = 4
 
-[[Languages.ru.menu.main]]
-name = "Отзывы"
-URL = "#testimonial"
-weight = 5
+#[[Languages.ru.menu.main]]
+#name = "Отзывы"
+#URL = "#testimonial"
+#weight = 5
 
 [[Languages.ru.menu.main]]
 name = "Контакты"
