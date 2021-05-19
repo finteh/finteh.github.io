@@ -1,0 +1,9 @@
+.russian-currency {line-height: 1.15;max-width:200px;margin-bottom:0px;word-wrap: normal!important;}
+.russian-currency table, .russian-currency table tr, .russian-currency td {border: none!important;margin:0!important;table-layout: auto!important;}
+.russian-currency #currency {border: none;margin: 10px 0px 0px 5px!important;}
+.russian-currency #currency2 {border: none;margin: 10px 0px 0px 5px!important;}
+.russian-currency #currency td.number{font-size: 1.3em!important;}
+.russian-currency #currency2 td.number{font-size: 1.3em!important;}
+.russian-currency  .znak {font-size:2.2em;}
+#currency td {padding:0;background:transparent;vertical-align:middle;}
+#currency2 td {padding:0;background:transparent;vertical-align:middle;}
