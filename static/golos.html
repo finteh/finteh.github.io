@@ -1,0 +1,140 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h1 id="-">Инструкция для получения токенов эндаумента</h1>
+<p>English version is after Russian version</p>
+<h2 id="-bsc">Создайте адрес в сети BSC</h2>
+<ol>
+<li>Если у вас не установлено расширение Metamask в браузере Chrome (Мы рекомендуем Chromium и Ubuntu), пожалуйста, установите его, пройдя по следующей ссылке <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en</a></li>
+<li>Для получения токенов эндаумента в сети Binance Smart Chain создайте адрес в расширении Metamask</li>
+</ol>
+<p><a href="https://incrypted.net/metamask-manual/">https://incrypted.net/metamask-manual/</a></p>
+<p><a href="https://youtu.be/vYj_0IryHtw">https://youtu.be/vYj_0IryHtw</a></p>
+<p><strong>Обратите внимание на то, что нужно обязательно указать memo при переводе токенов на всех не Ethereum сетях. Если в переводе не будет memo - перевод будет считаться донатом</strong></p>
+<h2 id="-cyber">Инструкция для перевода токенов CYBER</h2>
+<p>В удобный редактор копируем следующую запись:</p>
+<p><a href="https://explorer.cyberway.io/sign?trx={">https://explorer.cyberway.io/sign?trx={</a>
+  &quot;actions&quot;: [
+    {
+      &quot;account&quot;: &quot;cyber.token&quot;,
+      &quot;name&quot;: &quot;transfer&quot;,
+      &quot;authorization&quot;: [
+        {
+          &quot;actor&quot;: &quot;your_account&quot;,
+          &quot;permission&quot;: &quot;active&quot;
+        }
+      ],
+      &quot;data&quot;: {
+        &quot;from&quot;: &quot;your_account&quot;,
+        &quot;to&quot;: &quot;kucigy2e1q5l&quot;,
+        &quot;quantity&quot;: &quot;0.0001 CYBER&quot;,
+        &quot;memo&quot;: &quot;0x29e9696B9F1384847d0324E6A69f9c87C2B0E820&quot;
+      }
+    }
+  ]
+}</p>
+<ol>
+<li>Заменяем 0x29e9696B9F1384847d0324E6A69f9c87C2B0E820 в поле memo - на свой адрес из Metamask</li>
+<li>Заменяем в поле quantity сумму токенов нa необходимую, сохранить разрядность (нули после запятой)</li>
+<li>Заменяем your_account на свой, используем свой ник в блокчейне кибервей, имя по нику голоса смотрим здесь - <a href="https://explorer.cyberway.io">https://explorer.cyberway.io</a></li>
+<li>После всех замен копируем запись в адресную строку браузера. В открывшейся вкладке вставляем свой active ключ от golos.io и нажимаем Sign transaction</li>
+<li>На адрес указанный в memo будут начислены токены эндаумента</li>
+</ol>
+<h2 id="-">Инструкция для перевода рублей</h2>
+<ol>
+<li>Все переводы осуществляются со страницы Тиньков на имя президента ассоциации <a href="https://www.tinkoff.ru/cf/2pJ3nr4cOth">https://www.tinkoff.ru/cf/2pJ3nr4cOth</a></li>
+<li>В поле “Сообщение Александру” - впишите свой адрес из Metamask. Если вам нужны токены Cyber помимо токенов эндаумента, через пробел введите адрес в Cyberway.</li>
+<li>На адрес из Metamask указанный в memo будут начислены токены эндаумента</li>
+</ol>
+<p>350 ₽ - это тестовая сумма, все собранные рубли будут отображаться банком</p>
+<h2 id="-usdt">Инструкции для перевода USDT</h2>
+<h3 id="-">Биржи</h3>
+<ol>
+<li>Если у вас USDT на бирже и поддерживается memo при выводе - выводите BEP20 (Binance Smart Chain, BSC) на адрес 0x307F1246d7816C57B954B678E425a81F761b2EDc</li>
+<li>Если у вас USDT на Binance, перейдите по ссылке <a href="https://www.binance.com/en/my/wallet/account/c2c/send">https://www.binance.com/en/my/wallet/account/c2c/send</a>, введите в поле Email - kwaskoff@gmail.com, а в поле Note - свой адрес из Metamask. Если вам нужны токены Cyber помимо токенов эндаумента, через пробел введите адрес в Cyberway.</li>
+</ol>
+<h3 id="binance-smart-chain-ethereum-polygon">Binance Smart Chain, Ethereum, Polygon</h3>
+<ol>
+<li>Если USDT в Binance Smart Chain (Ethereum, Polygon) - на адрес 0x307F1246d7816C57B954B678E425a81F761b2EDc</li>
+<li>Если вам нужны токены Cyber помимо токенов эндаумента, в мемо введите закодированный адрес в Cyberway</li>
+<li>Как кодировать сообщения для Metamask - в конце инструкции на русском</li>
+</ol>
+<h3 id="tron">Tron</h3>
+<ol>
+<li>Если USDT в Tron - на адрес TUEvvHSwz3peU4S8yKi88BfokrzVSskJpy, при этом в TronLink (аналог Metamask для Трон) жмите “Add transfer note” - появится поле для memo, где укажите свой адрес из Metamask. </li>
+<li>Если вам нужны токены Cyber помимо токенов эндаумента, через пробел введите адрес в Cyberway.</li>
+</ol>
+<h3 id="rudex">Rudex</h3>
+<ol>
+<li>Если USDT в Graphene (Rudex) - на адрес finteh. В memo укажите свой адрес из Metamask.</li>
+<li>Если вам нужны токены Cyber помимо токенов эндаумента, через пробел введите адрес в Cyberway.</li>
+</ol>
+<h2 id="-memo-metamask">Кодирование memo в Metamask</h2>
+<ol>
+<li>Для добавления memo в переводах USDT в сетях Etherium based (ETH, BSC, Polygon) включите в Metamask следующую функцию </li>
+</ol>
+<p><a href="https://metamask.zendesk.com/hc/en-us/articles/360059452091-How-to-add-memo-during-the-transaction-to-the-exchanges-that-require-memo">https://metamask.zendesk.com/hc/en-us/articles/360059452091-How-to-add-memo-during-the-transaction-to-the-exchanges-that-require-memo</a></p>
+<ol>
+<li>В Metamask возможно добавить сообщение только в закодированном виде. Переходим по ссылке  <a href="https://www.moesif.com/solidity-abi-hex-decoder/encode">https://www.moesif.com/solidity-abi-hex-decoder/encode</a>. В  первом поле пишем своё memo, во втором выбираем String, жмём Encode.</li>
+</ol>
+<p>Результат выглядит как 0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003668747470733a2f2f7777772e6d6f657369662e636f6d2f736f6c69646974792d6162692d6865782d6465636f6465722f656e636f646500000000000000000000 </p>
+<ol>
+<li>Копируем полученный результат в поле Hex data своего Metamask при переводе</li>
+</ol>
+<h1 id="instructions-for-obtaining-endowment-tokens">Instructions for obtaining endowment tokens</h1>
+<h2 id="create-an-address-on-the-bsc-network">Create an address on the BSC network</h2>
+<p>If you don&#39;t have the Metamask extension installed in your Chrome browser (We recommend Chromium and Ubuntu), please install it from <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en</a>
+To receive endowment tokens on the Binance Smart Chain, create an address in the Metamask extension</p>
+<p><a href="https://medium.com/publicaio/a-complete-guide-to-using-metamask-updated-version-cd0d6f8c338f">https://medium.com/publicaio/a-complete-guide-to-using-metamask-updated-version-cd0d6f8c338f</a></p>
+<p><strong> Please note that it is necessary to include a memo when transferring tokens on all non-Ethereum networks. If there is no memo in the transfer, the transfer will be considered a donation </strong></p>
+<h2 id="instructions-for-transferring-cyber-tokens">Instructions for transferring CYBER tokens</h2>
+<p>Copy the following entry into a convenient editor:</p>
+<p><a href="https://explorer.cyberway.io/sign?trx=">https://explorer.cyberway.io/sign?trx=</a> {
+  &quot;actions&quot;: [
+    {
+      &quot;account&quot;: &quot;cyber.token&quot;,
+      &quot;name&quot;: &quot;translation&quot;,
+      &quot;authorization&quot;: [
+        {
+          &quot;actor&quot;: &quot;your_account&quot;,
+          &quot;permission&quot;: &quot;active&quot;
+        }
+      ],
+      &quot;data&quot;: {
+        &quot;from&quot;: &quot;your_account&quot;,
+        &quot;to&quot;: &quot;kucigy2e1q5l&quot;,
+        &quot;Quantity&quot;: &quot;0.0001 CYBER&quot;,
+        &quot;memo&quot;: &quot;0x29e9696B9F1384847d0324E6A69f9c87C2B0E820&quot;
+      }
+    }
+  ]
+}</p>
+<ol>
+<li>Replace 0x29e9696B9F1384847d0324E6A69f9c87C2B0E820 in the memo field - with your address from Metamask</li>
+<li>Replace the amount of tokens in the field with a special one, keep the bit width (zeros after the decimal point)</li>
+<li>We replace your_account with our own, use our nickname in the cyberway blockchain, see the name by the nickname of the voice here - <a href="https://explorer.cyberway.io">https://explorer.cyberway.io</a></li>
+<li>After all the replacements, copy the entry to the address bar. In the opened tab, insert your active key from golos.io and click Sign transaction</li>
+<li>Endowment tokens will be credited to the address in the memo</li>
+</ol>
+<h2 id="instructions-for-transferring-rubles">Instructions for transferring rubles</h2>
+<p>All transfers are made from the Tinkov page addressed to the president of the association <a href="https://www.tinkoff.ru/cf/2pJ3nr4cOth">https://www.tinkoff.ru/cf/2pJ3nr4cOth</a>
+In the field &quot;Message to Alexander&quot; - enter your address from Metamask. If you need Cyber ​​tokens in addition to endowment tokens, enter the address in Cyberway after a space.
+Endowment tokens will be credited to the address from Metamask in the memo</p>
+<p>350 ₽ - this is a test amount, all collected rubles will be a car</p>
+<h2 id="instructions-for-transferring-usdt">Instructions for transferring USDT</h2>
+<h3 id="exchanges">Exchanges</h3>
+<p>If you have USDT on the exchange and the memo is supported, withdrawal - withdraw BEP20 (Binance Smart Chain, BSC) to the address 0x307F1246d7816C57B954B678E425a81F761b2EDc
+If you have USDT on Binance, follow the link <a href="https://www.binance.com/en/my/wallet/account/c2c/send">https://www.binance.com/en/my/wallet/account/c2c/send</a>, enter the address in the Email field - kwaskoff@gmail.com, and in the Note field - your from Metamask. If you need Cyber ​​tokens in addition to endowment tokens, enter the address in Cyberway after a space.</p>
+<h3 id="binance-smart-chain">Binance Smart Chain</h3>
+<p>If the USDT in Binance Smart Chain is to the address 0x307F1246d7816C57B954B678E425a81F761b2EDc, if you need Cyber ​​tokens in addition to endowment tokens, enter the encoded Cyberway address in the memo. How to encode messages for Metamask - at the end of this document</p>
+<h3 id="throne">Throne</h3>
+<p>If USDT in Tron - to the address TUEvvHSwz3peU4S8yKi88BfokrzVSskJpy, while in TronLink (analogue of Metamask for Tron) click &quot;Add a note about transfer&quot; - a note field will appear, where specify your address from Metamask. If you need Cyber ​​tokens in addition to endowment tokens, enter the address in Cyberway after a space.</p>
+<h3 id="rudex">Rudex</h3>
+<p>If USDT is in Graphene (Rudex) - to the fintech address. In the memo, include your address from Metamascus. If you need Cyber ​​tokens in addition to endowment tokens, enter the address in Cyberway after a space.</p>
+<h2 id="encoding-memo-in-metamascus">Encoding Memo in Metamascus</h2>
+<p>To add a note in the USDT transfer on the Etherium-based network (ETH, BSC, Polygon), enable your Metamask function</p>
+<p><a href="https://metamask.zendesk.com/hc/en-us/articles/360059452091-How-to-add-memo-during-the-transaction-to-the-exchanges-that-require-memo">https://metamask.zendesk.com/hc/en-us/articles/360059452091-How-to-add-memo-during-the-transaction-to-the-exchanges-that-require-memo</a></p>
+<p>In Metamask, it is possible to add a message only in encoded form. Follow the link <a href="https://www.moesif.com/solidity-abi-hex-decoder/encode">https://www.moesif.com/solidity-abi-hex-decoder/encode</a>. In the first field we write our memo, in the second we select String, press Encode.</p>
+<p>The result looks like 0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</p>
+<p>Copy the result into the Hex data field of your Metamask when translating</p>
+</body></html>
