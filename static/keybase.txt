@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/finteh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://finteh.org
+  * I am finteh (https://keybase.io/finteh) on keybase.
+  * I have a public key ASApgxjoqY-g6zqVmWx97rYqnsAJoSzM2zePhz0QRYF7YQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101f2391c693715e25711bcd84f820a12c1f3fa3bd6d33477de5dc5f17ca38f028d0a",
+      "host": "keybase.io",
+      "kid": "0120298318e8a98fa0eb3a95996c7deeb62a9ec009a12cccdb378f873d1045817b610a",
+      "uid": "54fa1692cb5bcef931caf604fa1e4619",
+      "username": "finteh"
+    },
+    "merkle_root": {
+      "ctime": 1679937325,
+      "hash": "91461b478154bccc7558d6ea23b8730e829b9f487ba9b1a3b42eed30106a44d1a48e00212450d5a85a0daf00d9589aff3e6a755f55fb89239b761ea87a5fbefd",
+      "hash_meta": "6f7d06a612390695ebe181e16f9a21a4b8e3047c42d4fa61830efa9244acd5bf",
+      "seqno": 24255591
+    },
+    "service": {
+      "entropy": "rf76/AtnTzGA/pcMr8HGI5QJ",
+      "hostname": "finteh.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.2"
+  },
+  "ctime": 1679937376,
+  "expire_in": 504576000,
+  "prev": "9e436708fe94ccc35ef4f26de6e6b0f1899cfbee7d7e9af1584475234cc1a8bd",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgKYMY6KmPoOs6lZlsfe62Kp7ACaEszNs3j4c9EEWBe2EKp3BheWxvYWTESpcCC8QgnkNnCP6UzMNe9PJt5uaw8Ymc++59fprxWER1I0zBqL3EIEYwJAj2OyjSQmQTY8/keX5xZROb6FJLBGiHRGlOIRavAgHCo3NpZ8RA7wSwj+VXlsx4VNB+zv7CK3+orkollf9Nl3RxMwJshRSNLLTUzmyQL81xLO44SaJwRPt/IbPhKZvIJxGMw2fDCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBOi1/fQ9YkO+wY88JQxWCCJmaUGp8Ejz4vwucN0tkZno3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/finteh
+
+==================================================================
