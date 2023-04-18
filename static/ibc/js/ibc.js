@@ -43,7 +43,7 @@ function setError(error) {
 }
 
 function getData() {
-  fetch('https://81.200.148.147:8888/ibc_voting_data')
+  fetch('https://cwd-dao.su/ibc_voting_data')
     .then(response=> response.json())
     .then(json => setData(json))
     .catch(result => setError(result));
