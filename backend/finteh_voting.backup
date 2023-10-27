@@ -1,0 +1,153 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 10.23 (Ubuntu 10.23-0ubuntu0.18.04.2)
+-- Dumped by pg_dump version 10.23 (Ubuntu 10.23-0ubuntu0.18.04.2)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: const; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.const (
+    c_id integer NOT NULL,
+    c_name character varying(20),
+    c_value character varying(100)
+);
+
+
+ALTER TABLE public.const OWNER TO postgres;
+
+--
+-- Name: const_c_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.const_c_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.const_c_id_seq OWNER TO postgres;
+
+--
+-- Name: const_c_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.const_c_id_seq OWNED BY public.const.c_id;
+
+
+--
+-- Name: const c_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.const ALTER COLUMN c_id SET DEFAULT nextval('public.const_c_id_seq'::regclass);
+
+
+--
+-- Data for Name: const; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.const (c_id, c_name, c_value) FROM stdin;
+2	cwd_tlg	1108
+6	viz_tlg	30
+8	cwd_tlg_percent	83
+9	viz_tlg_percent	87
+12	viz_worker_percent	87
+3	cwd_worker	12
+33	eos_worker_link	#
+34	eos_tlg_link	#
+40	wax_worker_link	#
+41	wax_tlg_link	#
+14	bts_worker_link	#
+15	bts_tlg_link	#
+16	viz_worker_link	#
+17	viz_tlg_link	https://t.me/viz_world/150438
+19	cwd_tlg_link	https://t.me/cwdglobal/1571
+46	hive_worker_link	#
+47	hive_tlg_link	#
+52	atom_worker_link	#
+53	atom_tlg_link	#
+58	steem_worker_link	#
+59	steem_tlg_link	#
+18	cwd_worker_link	https://cwd.global/account/crowdwiz/voting
+4	bts_worker	0
+5	bts_tlg	0
+7	viz_worker	0
+10	bts_tlg_percent	0
+11	cwd_worker_percent	0
+13	bts_worker_percent	0
+29	eos_tlg	0
+30	eos_worker	0
+31	eos_worker_percent	0
+32	eos_tlg_percent	0
+35	wax_tlg	0
+36	wax_worker	0
+37	wax_worker_percent	0
+39	wax_tlg_percent	0
+42	hive_tlg	0
+43	hive_worker	0
+44	hive_worker_percent	0
+45	hive_tlg_percent	0
+48	atom_tlg	0
+49	atom_worker	0
+50	atom_worker_percent	0
+51	atom_tlg_percent	0
+54	steem_tlg	0
+55	steem_worker	0
+56	steem_worker_percent	0
+57	steem_tlg_percent	0
+\.
+
+
+--
+-- Name: const_c_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.const_c_id_seq', 59, true);
+
+
+--
+-- Name: const const_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.const
+    ADD CONSTRAINT const_pkey PRIMARY KEY (c_id);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
