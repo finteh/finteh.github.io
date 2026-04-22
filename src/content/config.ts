@@ -65,6 +65,17 @@ const postCollection = defineCollection({
   }),
 });
 
+const reportCollection = defineCollection({
+  loader: glob({ pattern: ['*.md', '*.mdx'], base: 'src/data/report' }),
+  schema: z.object({
+    title: z.string(),
+    excerpt: z.string().optional(),
+    publishDate: z.date(),
+    href: z.string().optional(),
+  }),
+});
+
 export const collections = {
   post: postCollection,
+  report: reportCollection,
 };

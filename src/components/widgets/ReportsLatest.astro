@@ -1,0 +1,77 @@
+---
+import { getCollection } from 'astro:content';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import type { Widget } from '~/types';
+
+interface Props extends Widget {
+  title?: string;
+  linkText?: string;
+  linkUrl?: string;
+  count?: number;
+}
+
+const {
+  title = await Astro.slots.render('title'),
+  linkText = 'All reports →',
+  linkUrl = '#',
+  count = 4,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+const entries = await getCollection('report');
+const reports = entries
+  .map((e) => ({
+    id: e.id,
+    title: e.data.title,
+    excerpt: e.data.excerpt,
+    publishDate: new Date(e.data.publishDate),
+    href: e.data.href ?? '#',
+  }))
+  .sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf())
+  .slice(0, count);
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <div class="flex flex-col lg:justify-between lg:flex-row mb-8">
+    {
+      title && (
+        <div class="md:max-w-sm">
+          <h2
+            class="text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none font-heading mb-2"
+            set:html={title}
+          />
+          {linkText && linkUrl && (
+            <a class="text-primary hover:underline font-medium" href={linkUrl}>
+              {linkText}
+            </a>
+          )}
+        </div>
+      )
+    }
+  </div>
+
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+    {
+      reports.map((r) => (
+        <article class="p-5 rounded-md border border-gray-200 dark:border-slate-700 flex flex-col">
+          <time
+            class="text-xs uppercase tracking-widest text-muted dark:text-slate-400 mb-2"
+            datetime={r.publishDate.toISOString()}
+          >
+            {r.publishDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+          </time>
+          <h3 class="text-lg font-bold leading-tight mb-2 font-heading dark:text-slate-200">
+            <a class="hover:text-primary" href={r.href}>
+              {r.title}
+            </a>
+          </h3>
+          {r.excerpt && <p class="text-sm text-muted dark:text-slate-400">{r.excerpt}</p>}
+        </article>
+      ))
+    }
+  </div>
+</WidgetWrapper>
