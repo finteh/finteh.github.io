@@ -17,6 +17,7 @@ const {
   subtitle = await Astro.slots.render('subtitle'),
   tagline = await Astro.slots.render('tagline'),
   actions = await Astro.slots.render('actions'),
+  secondary = await Astro.slots.render('secondary'),
 
   id,
   isDark = false,
@@ -27,7 +28,7 @@ const {
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <div
-    class="max-w-3xl mx-auto text-center p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-600"
+    class="max-w-3xl mx-auto text-center p-6 rounded-md bg-white shadow-xl dark:bg-white/5 dark:shadow-none dark:border dark:border-default"
   >
     <Headline
       title={title}
@@ -35,8 +36,8 @@ const {
       tagline={tagline}
       classes={{
         container: 'mb-0 md:mb-0',
-        title: 'text-4xl md:text-4xl font-bold tracking-tighter mb-4 font-heading',
-        subtitle: 'text-xl text-muted dark:text-slate-400',
+        title: 'font-bold tracking-tighter mb-4 font-heading text-heading',
+        subtitle: 'text-xl text-muted',
       }}
     />
     {
@@ -54,5 +55,6 @@ const {
         </div>
       )
     }
+    {secondary && <div class="mt-5 text-sm text-muted" set:html={secondary} />}
   </div>
 </WidgetWrapper>

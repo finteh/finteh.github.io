@@ -7,6 +7,7 @@ import DirectionsGrid from '~/components/widgets/DirectionsGrid.astro';
 import ReportsLatest from '~/components/widgets/ReportsLatest.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { siteLinks } from '~/data/siteLinks';
 
 const metadata = {
   title: 'FinTech Association — the association for people building fintech',
@@ -19,139 +20,155 @@ const metadata = {
   <HeroText
     title="The association for people building fintech"
     subtitle="A community of developers, analysts, and founders building fintech and crypto. Since 2017. No membership fees, no bureaucracy."
-    callToAction={{ variant: 'primary', text: 'Join Telegram', href: '#' }}
-    callToAction2={{ text: 'How we work', href: '#how-we-work' }}
+    callToAction={{ variant: 'primary', text: 'Join Telegram', href: siteLinks.joinTelegram }}
+    callToAction2={{ text: 'How we work', href: siteLinks.howWeWork }}
   />
 
   <!-- Screen 2 — Stats -->
-  <Stats
-    tagline="Since 2017"
-    stats={[
-      { amount: '1,477', title: 'Chat members' },
-      { amount: '7+', title: 'Countries' },
-    ]}
-  />
+  <div class="bg-slate-50/70 dark:bg-transparent dark:border-t dark:border-slate-800/50">
+    <Stats
+      tagline="Since 2017"
+      stats={[
+        { amount: '1,477', title: 'Chat members' },
+        { amount: '7+', title: 'Countries' },
+      ]}
+    />
+  </div>
 
   <!-- Screen 3 — How we work -->
-  <section id="how-we-work" class="px-4 sm:px-6 py-16 md:py-20 mx-auto max-w-3xl">
-    <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-8 font-heading dark:text-white">
-      How the association works
-    </h2>
-    <div class="space-y-6 text-lg text-muted dark:text-slate-400">
-      <p>The charter signed in 2017 is clear on this: to become a member, join the Telegram chat.</p>
-      <p>
-        The chat is the registry. The chat history is the protocol. Votes in the chat are decisions. Everything is
-        public by default.
-      </p>
-      <p>Not an experiment. Eight years and counting.</p>
-    </div>
-    <a class="inline-block mt-8 text-primary hover:underline font-medium" href="#">Read full charter →</a>
-  </section>
+  <div class="dark:border-t dark:border-slate-800/50">
+    <section id="how-we-work" class="px-4 sm:px-6 py-16 md:py-20 mx-auto max-w-3xl">
+      <h2 class="font-bold tracking-tighter mb-8 font-heading text-heading">
+        How the association works
+      </h2>
+      <div class="space-y-6 text-lg text-muted">
+        <p>The charter signed in 2017 is clear on this: to become a member, join the Telegram chat.</p>
+        <p>
+          The chat is the registry. The chat history is the protocol. Votes in the chat are decisions. Everything is
+          public by default.
+        </p>
+        <p>Not an experiment. Eight years and counting.</p>
+      </div>
+      <a class="inline-block mt-8 text-primary hover:underline font-medium" href={siteLinks.charter}>Read full charter →</a>
+    </section>
+  </div>
 
   <!-- Screen 4 — Who's in the chat -->
-  <section class="px-4 sm:px-6 py-16 md:py-20 mx-auto max-w-3xl">
-    <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-8 font-heading dark:text-white">
-      Who's in the chat
-    </h2>
-    <div class="space-y-6 text-lg text-muted dark:text-slate-400">
-      <p>
-        Banking app developers from major banks. Founders of fintech startups. Blockchain experts. Analysts, lawyers,
-        investors, owners of infrastructure projects.
-      </p>
-      <p>Through the chat, people have hired developers, found investors, and closed deals.</p>
-    </div>
-    <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3">
-      <a class="text-primary hover:underline font-medium" href="#">Meet the board →</a>
-      <a class="text-primary hover:underline font-medium" href="#">Expert pool →</a>
-    </div>
-  </section>
+  <div class="bg-slate-50/70 dark:bg-transparent dark:border-t dark:border-slate-800/50">
+    <section class="px-4 sm:px-6 py-16 md:py-20 mx-auto max-w-3xl">
+      <h2 class="font-bold tracking-tighter mb-8 font-heading text-heading">
+        Who's in the chat
+      </h2>
+      <div class="space-y-6 text-lg text-muted">
+        <p>
+          Banking app developers from major banks. Founders of fintech startups. Blockchain experts. Analysts, lawyers,
+          investors, owners of infrastructure projects.
+        </p>
+        <p>Through the chat, people have hired developers, found investors, and closed deals.</p>
+      </div>
+      <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3">
+        <a class="text-primary hover:underline font-medium" href={siteLinks.board}>Meet the board →</a>
+        <a class="text-primary hover:underline font-medium" href={siteLinks.expertPool}>Expert pool →</a>
+      </div>
+    </section>
+  </div>
 
   <!-- Screen 5 — What we do -->
-  <DirectionsGrid
-    title="What we do"
-    items={[
-      {
-        title: 'Code audit and expert assessment.',
-        description:
-          "Association experts audit smart contracts, blockchain projects, and fintech products. Reports are published openly, under the association's name.",
-        callToAction: { text: 'Request audit', href: '#' },
-      },
-      {
-        title: 'Research.',
-        description:
-          "Our flagship is the UBI project. We've worked with the World Bank, the Central Bank of Russia, and universities in Russia and Estonia.",
-        callToAction: { text: 'Read more', href: '#' },
-      },
-      {
-        title: 'Blockchain Validators.',
-        description:
-          'We run validator nodes on Cosmos and Graphene networks. Through our Relay Program, we take on delegations from winding-down validators.',
-        callToAction: { text: 'Validator Relay', href: '#' },
-      },
-      {
-        title: 'Incubator.',
-        description:
-          'For open-source projects with permissive licenses. By invitation only — we take on projects from members and experts.',
-        callToAction: { text: 'Read more', href: '#' },
-      },
-    ]}
-  />
+  <div class="dark:border-t dark:border-slate-800/50">
+    <DirectionsGrid
+      title="What we do"
+      items={[
+        {
+          title: 'Code audit and expert assessment',
+          description:
+            "Association experts audit smart contracts, blockchain projects, and fintech products. Reports are published openly, under the association's name.",
+          callToAction: { text: 'Request audit', href: siteLinks.auditRequest },
+        },
+        {
+          title: 'Research',
+          description:
+            "Our flagship is the UBI project. We've worked with the World Bank, the Central Bank of Russia, and universities in Russia and Estonia.",
+          callToAction: { text: 'Read more', href: siteLinks.ubiResearch },
+        },
+        {
+          title: 'Blockchain Validators',
+          description:
+            'We run validator nodes on Cosmos and Graphene networks. Through our Relay Program, we take on delegations from winding-down validators.',
+          callToAction: { text: 'Validator Relay', href: siteLinks.validatorRelay },
+        },
+        {
+          title: 'Incubator',
+          description:
+            'For open-source projects with permissive licenses. By invitation only — we take on projects from members and experts.',
+          callToAction: { text: 'Read more', href: siteLinks.incubator },
+        },
+      ]}
+    />
+  </div>
 
   <!-- Screen 6 — Latest reports -->
-  <ReportsLatest title="Latest reports" linkText="All reports →" linkUrl="#" count={4} />
+  <div class="bg-slate-50/70 dark:bg-transparent dark:border-t dark:border-slate-800/50">
+    <ReportsLatest title="Latest reports" linkText="All reports →" linkUrl={siteLinks.allReports} count={4} />
+  </div>
 
   <!-- Screen 7 — President -->
-  <Content tagline="Led by" title="Aleksandr Kwaskoff">
-    <Fragment slot="content">
-      <p class="text-sm uppercase tracking-widest text-muted dark:text-slate-400 mb-4">President</p>
-      <p class="mb-8">
-        Founded the association in 2017 from a Telegram chat started while working at Rocketbank. Expert in fintech and
-        crypto. Runs audit requests end to end: scoping, expert selection, sign-off.
-      </p>
-      <div class="flex flex-wrap gap-x-6 gap-y-3">
-        <a class="text-primary hover:underline font-medium" href="#">Full bio →</a>
-        <a class="text-primary hover:underline font-medium" href="#">Direct contact →</a>
-      </div>
-    </Fragment>
-    <Fragment slot="image">
-      <div
-        class="mx-auto w-full aspect-[4/5] rounded-lg bg-slate-800 dark:bg-slate-700 flex flex-col items-center justify-center text-slate-300"
-      >
-        <span class="text-6xl font-heading font-bold tracking-tight">AK</span>
-        <span class="mt-4 text-sm uppercase tracking-widest">Aleksandr Kwaskoff — President</span>
-      </div>
-    </Fragment>
-  </Content>
+  <div class="dark:border-t dark:border-slate-800/50">
+    <Content tagline="Led by" title="Aleksandr Kwaskoff" subtitle="President, FinTech Association">
+      <Fragment slot="content">
+        <p class="mb-8">
+          Founded the association in 2017 from a Telegram chat started while working at Rocketbank. Expert in fintech and
+          crypto. Runs audit requests end to end: scoping, expert selection, sign-off.
+        </p>
+        <div class="flex flex-wrap gap-x-6 gap-y-3">
+          <a class="text-primary hover:underline font-medium" href={siteLinks.presidentBio}>Full bio →</a>
+          <a class="text-primary hover:underline font-medium" href={siteLinks.presidentContact}>Direct contact →</a>
+        </div>
+      </Fragment>
+      <Fragment slot="image">
+        <div
+          class="mx-auto w-full aspect-[4/5] rounded-lg bg-[#1a2639] flex flex-col items-center justify-center text-white"
+        >
+          <span class="text-6xl font-heading font-bold tracking-tight">AK</span>
+          <span class="mt-4 text-sm uppercase tracking-widest">Aleksandr Kwaskoff — President</span>
+        </div>
+      </Fragment>
+    </Content>
+  </div>
 
   <!-- Screen 8 — Partnership -->
-  <section class="px-4 sm:px-6 py-16 md:py-20 mx-auto max-w-3xl">
-    <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-8 font-heading dark:text-white">
-      Organizations join as partners, not members
-    </h2>
-    <p class="text-lg text-muted dark:text-slate-400">
-      Membership is for individuals only. Companies join as partners: joint projects, access to expertise, presence in
-      the community.
-    </p>
-    <a class="inline-block mt-8 text-primary hover:underline font-medium" href="#">Partnership details →</a>
-  </section>
+  <div class="bg-slate-50/70 dark:bg-transparent dark:border-t dark:border-slate-800/50">
+    <section class="px-4 sm:px-6 py-16 md:py-20 mx-auto max-w-3xl">
+      <h2 class="font-bold tracking-tighter mb-8 font-heading text-heading">
+        Organizations join as partners, not members
+      </h2>
+      <p class="text-lg text-muted">
+        Membership is for individuals only. Companies join as partners: joint projects, access to expertise, presence in
+        the community.
+      </p>
+      <a class="inline-block mt-8 text-primary hover:underline font-medium" href={siteLinks.partnership}>Partnership details →</a>
+    </section>
+  </div>
 
   <!-- Screen 9 — Events -->
-  <CallToAction
-    title="Upcoming event"
-    subtitle="No upcoming event scheduled. Full record in the archive."
-    actions={[{ variant: 'secondary', text: 'Events archive →', href: '#' }]}
-  />
+  <div class="dark:border-t dark:border-slate-800/50">
+    <CallToAction
+      title="Upcoming event"
+      subtitle="No upcoming event scheduled. Full record in the archive."
+      actions={[{ variant: 'secondary', text: 'Events archive →', href: siteLinks.eventsArchive }]}
+    />
+  </div>
 
   <!-- Screen 10 — Final CTA -->
-  <CallToAction
-    title="To join, post in the chat"
-    subtitle="Introduce yourself and ask your first question. You'll get answers from people who build fintech and crypto every day."
-    actions={[{ variant: 'primary', text: 'Join Telegram', href: '#' }]}
-  />
-  <div class="max-w-3xl mx-auto px-4 sm:px-6 pb-16 md:pb-20 text-center">
-    <p class="text-sm text-muted dark:text-slate-400">
-      For organizations: <a class="text-primary hover:underline font-medium" href="#">Partnership →</a> · For press:
-      <a class="text-primary hover:underline font-medium" href="#">Contact →</a>
-    </p>
+  <div class="bg-slate-50/70 dark:bg-transparent dark:border-t dark:border-slate-800/50">
+    <CallToAction
+      title="To join, post in the chat"
+      subtitle="Introduce yourself and ask your first question. You'll get answers from people who build fintech and crypto every day."
+      actions={[{ variant: 'primary', text: 'Join Telegram', href: siteLinks.joinTelegram }]}
+    >
+      <Fragment slot="secondary">
+        For organizations: <a class="text-primary hover:underline font-medium" href={siteLinks.partnership}>Partnership →</a> · For press:
+        <a class="text-primary hover:underline font-medium" href={siteLinks.pressContact}>Contact →</a>
+      </Fragment>
+    </CallToAction>
   </div>
 </Layout>

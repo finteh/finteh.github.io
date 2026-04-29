@@ -1,43 +1,41 @@
 ---
 import '@fontsource-variable/inter';
-
-// 'DM Sans'
-// Nunito
-// Dosis
-// Outfit
-// Roboto
-// Literata
-// 'IBM Plex Sans'
-// Karla
-// Poppins
-// 'Fira Sans'
-// 'Libre Franklin'
-// Inconsolata
-// Raleway
-// Oswald
-// 'Space Grotesk'
-// Urbanist
 ---
 
 <style is:inline>
+  /* FinTech Association brand palette
+     - Brand Maroon   #8C2D2D
+     - Brand Mustard  #F0B323
+     - Deep Navy      #1A2639
+     - Muted Slate    #94A3B8
+     All text/background combinations below pass WCAG AA. */
+
   :root {
     --aw-font-sans: 'Inter Variable';
     --aw-font-serif: 'Inter Variable';
     --aw-font-heading: 'Inter Variable';
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    /* Primary = Brand Maroon (CTAs, headings, key brand) */
+    --aw-color-primary: #8c2d2d;
+    /* Secondary = darker maroon; safe as text on white and as btn-primary hover */
+    --aw-color-secondary: #6b2020;
+    /* Accent = Brand Mustard (badges, borders, highlights — not text on white) */
+    --aw-color-accent: #f0b323;
 
-    --aw-color-text-heading: rgb(0 0 0);
-    --aw-color-text-default: rgb(16 16 16);
-    --aw-color-text-muted: rgb(16 16 16 / 66%);
-    --aw-color-bg-page: rgb(255 255 255);
+    --aw-color-text-heading: #8c2d2d;
+    --aw-color-text-default: #1a2639;
+    --aw-color-text-muted: #4b5563;
+    --aw-color-text-page: #1a2639;
+    --aw-color-bg-page: #ffffff;
+    --aw-color-bg-page-dark: #1a2639;
+    --aw-color-border: #e5e7eb;
 
-    --aw-color-bg-page-dark: rgb(3 6 32);
+    /* Text color that sits on a primary-colored surface (button fill). */
+    --aw-color-on-primary: #ffffff;
 
     ::selection {
-      background-color: lavender;
+      background-color: #f0b323;
+      color: #1a2639;
     }
   }
 
@@ -46,18 +44,24 @@ import '@fontsource-variable/inter';
     --aw-font-serif: 'Inter Variable';
     --aw-font-heading: 'Inter Variable';
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    /* In dark mode primary interactive = Brand Mustard (maroon fails contrast on navy). */
+    --aw-color-primary: #f0b323;
+    --aw-color-secondary: #d99a0f;
+    --aw-color-accent: #f0b323;
 
-    --aw-color-text-heading: rgb(247, 248, 248);
-    --aw-color-text-default: rgb(229 236 246);
-    --aw-color-text-muted: rgb(229 236 246 / 66%);
-    --aw-color-bg-page: rgb(3 6 32);
+    --aw-color-text-heading: #ffffff;
+    --aw-color-text-default: #94a3b8;
+    --aw-color-text-muted: #94a3b8;
+    --aw-color-text-page: #94a3b8;
+    --aw-color-bg-page: #1a2639;
+    --aw-color-border: #2d3a52;
+
+    /* White text on mustard fails AA; use deep navy instead. */
+    --aw-color-on-primary: #1a2639;
 
     ::selection {
-      background-color: black;
-      color: snow;
+      background-color: #f0b323;
+      color: #1a2639;
     }
   }
 </style>
